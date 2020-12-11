@@ -25,4 +25,7 @@ public class OSSWrapper {
     public OSSClient getClient() {
         return mClient;
     }
+
+
+
 }
