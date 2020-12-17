@@ -42,6 +42,11 @@ public class OSSAuthCredentialsProvider extends OSSFederationCredentialProvider 
         this.mDecoder = decoder;
     }
 
+    /**
+     * 可以加自己的东西吗？
+     * @return
+     * @throws ClientException
+     */
     @Override
     public OSSFederationToken getFederationToken() throws ClientException {
         OSSFederationToken authToken;

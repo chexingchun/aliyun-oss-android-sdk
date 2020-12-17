@@ -113,6 +113,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(i, RESULT_LOAD_IMAGE);
             }
         });
+        Button myButton=(Button) findViewById(R.id.myButton);
+        myButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,TestActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         Button upload = (Button) findViewById(R.id.upload);
         upload.setOnClickListener(new View.OnClickListener() {
